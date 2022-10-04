@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="contagem">
+
+        <input id="day" class="timer" type="number" placeholder="day" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+        <input id="hour" class="timer" type="number" placeholder="hour" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+        <input id="min" class="timer" type="number" placeholder="min" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+        <input id="sec" class="timer" type="number" placeholder="sec" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+        
+    </div>
+
+    <div class="controle">
+
+        <button class="btn" id="start">START</button>
+        <button class="btn" id="pause">STOP</button>
+        <button class="btn" id="reset">RESET</button>
+        
+    </div>
+
+    </div>
+
+<audio id="sound" src="./assets/sound/Som De Despertador.mp3" style="display: none;"></audio>
+
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="./index.js"></script> -->
+</body>
+</html>
